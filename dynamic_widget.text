@@ -1,0 +1,32 @@
+import 'package:dynamic_widget/dynamic_widget.dart';
+import 'package:json_annotation/json_annotation.dart';
+import 'package:flutter/material.dart';
+import 'package:afs_farmer/index.dart';
+
+part '$FILE_NAME$.g.dart';
+
+@JsonSerializable(
+  explicitToJson: true,
+  nullable: true,
+  createToJson: false,
+)
+class $CLASS$ extends UIBase  {
+
+  factory $CLASS$.fromJson(Map<String, dynamic> json) => $CLASS_NAME$(json);
+
+  @override
+  List<NFWidget> get childElements => [];
+  
+  @override
+  Widget build(
+    BuildContext context, {
+    WillHandleCTA willHandleCTA,
+  }) {
+     return super.embedChild();}
+
+}
+
+
+CLASS -> dartClassName()
+CLASS_NAME ->  dartClassNameMethodName()
+FILE_NAME -> fileNameWithoutExtension()
